@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import PropTypes, { object } from 'prop-types';
 
 import TextConent from 'components/TextContent/TextConent';
 import StatisticElement from 'components/StatisticElement/StatisticElement';
@@ -8,8 +7,6 @@ const Statistic = function () {
   const [good, setGood] = useState(0);
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
-
-  const handleSubmit = evt => console.log(evt.target.name);
 
   const handleClick = evt => {
     console.log(evt.target.name);
