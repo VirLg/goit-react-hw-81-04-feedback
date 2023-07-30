@@ -1,4 +1,4 @@
-const { Component } = require('react');
+import PropTypes from 'prop-types';
 
 const StatisticElement = ({ props }) => {
   return (
@@ -17,3 +17,6 @@ const StatisticElement = ({ props }) => {
 };
 
 export default StatisticElement;
+StatisticElement.propTypes = {
+  props: PropTypes.func.isRequired,
+};

@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { render } from '@testing-library/react';
 
 const TextConent = ({ good, neutral, bad, summ, positiv }) => {
-  // console.log(summ);
-  // const { good, neutral, bad, total } = props;
   return (
     <>
       <h2>
@@ -27,3 +24,10 @@ const TextConent = ({ good, neutral, bad, summ, positiv }) => {
 TextConent.propTypes = {};
 
 export default TextConent;
+TextConent.propTypes = {
+  good: PropTypes.number.isRequired,
+  neutral: PropTypes.number.isRequired,
+  bad: PropTypes.number.isRequired,
+  summ: PropTypes.number.isRequired,
+  positiv: PropTypes.number.isRequired,
+};
