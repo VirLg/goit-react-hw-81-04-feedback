@@ -7,7 +7,6 @@ const TextConent = ({ good, neutral, bad, summ, positiv }) => {
   // const { good, neutral, bad, total } = props;
   return (
     <>
-      <h1>Statistics</h1>
       <h2>
         Good: <span>{good}</span>
       </h2>

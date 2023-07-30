@@ -20,18 +20,24 @@ const Statistic = function () {
   };
 
   const summ = good + neutral + bad;
+
   const positivePercentage = Math.round((good / summ) * 100);
-  console.log(positivePercentage);
+
   return (
     <>
-      <TextConent
-        good={good}
-        neutral={neutral}
-        bad={bad}
-        summ={summ}
-        positiv={positivePercentage}
-      />
       <StatisticElement props={handleClick} />
+      <br />
+      {summ ? (
+        <TextConent
+          good={good}
+          neutral={neutral}
+          bad={bad}
+          summ={summ}
+          positiv={positivePercentage}
+        />
+      ) : (
+        'Not feedback given'
+      )}
     </>
   );
 };

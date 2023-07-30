@@ -1,8 +1,6 @@
 const { Component } = require('react');
 
 const StatisticElement = ({ props }) => {
-  console.log(props);
-
   return (
     <>
       <button type="button" name="good" onClick={props}>
